@@ -850,12 +850,10 @@ a{
 }
 
 
-
-
 @media only screen and (width: 414px){
     .grid-text{
         border-radius: 0px;
-        top: 103.5px;
+        top: 102.5px;
         right: 0px;
         font-size: 1.1rem;
         width: 100%;
