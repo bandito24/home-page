@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Easyscape Test</title>
+</head>
+
+<body>
+<div id="container">
+    <header>
+        <div id="user">
+            <img id='user-icon' src="./icons/user-icon.png" alt="User icon">
+            <p id='user-id'>Welcome dmuddx@gmail.com</p>
+        </div>
+        <div id="header">
+            <img id="header-logo" src="./icons/easyscape-earth-logo.png" alt="EasyScape Logo">
+            <nav>
+                <div id='design-garden-nav' class="nav-link">
+                    <img class='nav-logo' src="./icons/design-garden-logo.png" alt="Design Garden Icon">
+                    <h4 class="nav-tag">DESIGN GARDEN</h4>
+                </div>
+                <div id="browse-for-plants-nav" class="nav-link">
+                    <img class='nav-logo' src="./icons/browse-plants-icon.png" alt="Browse For Plants Icon">
+                    <h4 class="nav-tag">BROWSE PLANTS</h4>
+                </div>
+                <div id="search-for-plants-nav" class="nav-link">
+                    <img class='nav-logo' src="./icons/nav-search-logo.png" alt="Search For Plants Icon">
+                    <h4 class="nav-tag">SEARCH PLANTS</h4>
+                </div>
+            </nav>
+            <button id="sign-out">Sign Out</button>
+        </div>
+    </header>
+    <div id="mobile-container">
+        <div id="mobile-header">
+            <img class="mobile-icon" id='clickable-menu' src="./icons/mobile-menu.png" alt="Menu">
+                <div id="menu-dropdown">
+                    <p class="dropdown-option">Add Plant</p>
+                    <a href="https://easyscape.com/demo/design_mapbox.php" ><p class="dropdown-option">Design Garden</p></a>
+                   <a href="https://easyscape.com/demo/"> <p class="dropdown-option">Browse Plants</p></a>
+                  <p class="dropdown-option">Account</p>
+                    <p class="dropdown-option">Sign Out</p>
+                </div>
+            <img id='mobile-logo' src="./icons/easyscape-earth-logo.png" alt="Easyscape Logo">
+            <a href="https://easyscape.com/demo/search_query.php" ><img class="mobile-icon" src="./icons/nav-search-logo.png" alt="Search Icon"></a>
+        </div>
+    </div>
+
+    <main>
+        <div id="plants-for-location">
+            <div id="enter-address">
+                <div id="mobile-label">
+                    <label id="location-label" for="location-input">Find Plants for your Location</label>
+                    <img src="./icons/enter-location.png" class="icon" id="location-icon-mobile"/>
+                </div>
+                <div id="user-address">
+                    <input 
+                    id="location-input" 
+                    placeholder="Enter your address or click the location icon"
+                    />
+                    <img src="./icons/enter-location.png" class="icon" id="location-icon"/>
+                </div>
+            </div>
+            <div id="toggle-native">
+                <p id="select-all-plants">All Plants</p>
+                <p id="select-native-plants">Native Plants</p>
+            </div>
+        </div>
+        <div id="grid-container">
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/all-plants.jpeg" alt="All Plants">
+                <p class="grid-text">All Plants (8092)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/trees.jpeg" alt="Trees">
+                <p class="grid-text">Trees (1704)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/shrubs.jpeg" alt="Shrubs">
+                <p class="grid-text">Shrubs (2905)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/perennials.jpeg" alt="Perennial Herbs">
+                <p class="grid-text">Perennial Herbs (2732)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/annuals.jpeg" alt="Annual Herbs">
+                <p class="grid-text">Annual Herbs (389)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/vines.jpeg" alt="Vines">
+                <p class="grid-text">Vines (368)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/ferns.jpeg" alt="Ferns">
+                <p class="grid-text">Ferns (150)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/grasses.jpeg" alt="Grasses">
+                <p class="grid-text">Grasses (572)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/succulents.jpeg" alt="Succulents">
+                <p class="grid-text">Succulents (419)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/bulbs.jpeg" alt="Bulbs">
+                <p class="grid-text">Bulbs (392)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/low-water.jpeg" alt="Low Water Plants">
+                <p class="grid-text">Low Water (3487)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/full-sun.jpeg" alt="Full Sun Plants">
+                <p class="grid-text">Full Sun (3231)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/part-shade.jpeg" alt="Part Shade Plants">
+                <p class="grid-text">Part Shade (4873)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/full-shade.jpeg" alt="Full Shade Plants">
+                <p class="grid-text">Full Shade (1521)</p>
+            </div>
+            <div class="grid-plant">
+                <img class="grid-image" src="./test-photos/evergreens.jpeg" alt="Evergreen Plants">
+                <p class="grid-text">Evergreens (4312)</p>
+            </div>
+        </div>
+
+
+    </main>
+     
+    <footer>
+            <div id="plantlist-library">
+                <img class='footer-icon' src="./icons/plantlist-library.png" alt="Plantlist Library icon">
+                <p id="plantlist-library">Plantlist Library</p>
+            </div>
+        <div id="footer-option">
+            <p>About</p>
+            <p>Help</p>
+            <div id="tutorial-menu">
+                <img class='footer-icon' src="./icons/footer-tutorial.png" alt="Play tutorial icon">
+                <p>Tutorial</p>
+            </div>
+            <p>Privacy</p>
+            <p>Contact</p>
+            <p>Upgrade</p>
+        </div>
+            <p id="copyright">&copy 2019</p>
+    </footer>
+
+<script src="./index.js"></script>
+</div>
+</body>
+</html>
