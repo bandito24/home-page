@@ -467,26 +467,26 @@ footer p:hover{
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 2540px){
+@media only screen and (max-width: 2846px){
 
     #grid-container{
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(3, 1fr);
         /* column-gap: 15px; */
+        max-width: 2846px;
         margin: 0 auto;
         grid-auto-rows: 1fr;
         width: 100%;
         flex-wrap: wrap;
         justify-items: center;
-    
     }
     
     .grid-plant{
-        max-width: 240px;
-        min-width: 180px;
+        max-width: 265px;
+        min-width: 240px;
         position: relative;
-        margin: 0 5px;
+        margin: 0 9px;
         padding: 0;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
@@ -514,7 +514,7 @@ footer p:hover{
     }
 
 
-@media only screen and (max-width: 2262px){
+@media only screen and (max-width: 2345px){
 
     #grid-container{
         display: grid;
@@ -530,11 +530,11 @@ footer p:hover{
     }
     
     .grid-plant{
-        max-width: 240px;
+        max-width: 265px;
         min-width: 240px;
         position: relative;
         padding: 0;
-        margin: 0 5px;
+        margin: 0 7.5px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
     }
@@ -560,7 +560,7 @@ footer p:hover{
     }
     }
 
-@media only screen and (max-width: 2016px){
+@media only screen and (max-width: 2055px){
 
     #grid-container{
         display: grid;
@@ -576,7 +576,7 @@ footer p:hover{
     }
     
     .grid-plant{
-        max-width: 240px;
+        max-width: 265px;
         min-width: 240px;
         position: relative;
         margin: 0 5px;
@@ -610,7 +610,7 @@ footer p:hover{
 
 
 
-@media only screen and (max-width: 1762px){
+@media only screen and (max-width: 1765px){
 
     #grid-container{
         display: grid;
@@ -626,8 +626,8 @@ footer p:hover{
     }
     
     .grid-plant{
-        max-width: 240px;
-        min-width: 225px;
+        max-width: 265px;
+        min-width: 224px;
         position: relative;
         padding: 0;
         margin: 0 5px;
@@ -659,7 +659,7 @@ footer p:hover{
 
 
 
-@media only screen and (max-width: 1420px){
+@media only screen and (max-width: 1415px){
 
     #grid-container{
         display: grid;
@@ -675,7 +675,7 @@ footer p:hover{
     }
     
     .grid-plant{
-        max-width: 266px;
+        max-width: 265px;
         min-width: 195px;
         position: relative;
         padding: 0;
@@ -888,7 +888,7 @@ footer p:hover{
     
     .grid-plant{
         max-width: 240px;
-        min-width: 180px;
+        min-width: 189px;
         position: relative;
         margin: 0 2.5px;
         padding: 0;
