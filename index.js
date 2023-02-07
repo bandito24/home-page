@@ -75,6 +75,7 @@ const invisibleMargin = unusedSpace / (numOfColumns * 2)
 adjustRowGap()
 
 window.addEventListener("resize", adjustRowGap)
+screen.orientation.addEventListener("change", adjustRowGap)
 
 
 
