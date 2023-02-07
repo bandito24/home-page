@@ -46,3 +46,52 @@ function hideMenu(event){
 }
 document.addEventListener("mousedown", hideMenu)
 clickableMenu.addEventListener('click', showMenu)
+
+
+
+// FOR ADJUSTING ROW GAP BASED ON HORIZONTAL MARGINS
+
+
+const adjustRowGap = () => {
+const screenWidth = window.innerWidth
+
+const gridPlant = document.getElementsByClassName('grid-plant')
+const gridContainer = document.getElementById('grid-container')
+
+const gridPlantWidth = getComputedStyle(gridPlant[0]).width.split('').filter(char => char !== 'p' & char !== 'x').join('')
+const columns = getComputedStyle(gridContainer).gridTemplateColumns
+const numOfColumns = columns.split(' ').length
+
+const unusedSpace = screenWidth - (numOfColumns * gridPlantWidth)
+const invisibleMargin = unusedSpace / (numOfColumns * 2)
+
+    
+    for(let i=0; i < gridPlant.length; i++){
+        gridPlant[i].style.marginBottom = (invisibleMargin - 3) + 'px'
+    }
+
+}
+
+adjustRowGap()
+
+window.addEventListener("resize", adjustRowGap)
+
+
+
+
+
+
+// const adjustRowGap = () => {
+//     let plantGap = getComputedStyle(gridPlant[0]).margin
+//     plantGap = plantGap.split(' ')
+//     plantGap = plantGap[1].split('').filter(char => char !== 'p' && char !== 'x').join('')
+//     plantGap = plantGap + 'px'
+//     console.log(plantGap)
+    
+//     for(let i=0; i < gridPlant.length; i++){
+//         gridPlant[i].style.marginBottom = plantGap
+//     }
+    
+// }
+
+// adjustRowGap()
