@@ -1056,8 +1056,14 @@ a{
     footer p{
         font-size: .6rem;
     }
+    
 }
 
+@media only screen and (max-width: 640px){
+    .grid-text{
+        font-size: 1rem; 
+    }
+}
 
 @media only screen and (max-width: 624px){
     #location-input{
@@ -1080,9 +1086,7 @@ a{
     #mobile-label{
         padding-bottom: 9px;
     }
-    .grid-text{
-        font-size: 1rem; 
-    }
+    
 }
 
 
