@@ -77,7 +77,21 @@ screen.orientation.addEventListener("change", adjustRowGap)
 adjustRowGap()
 window.addEventListener("resize", adjustRowGap)
 
+// FOR CHANGING THE PLACEHOLDER OF LOCATION INPUT WITH VARYING WINDOW SIZE
 
+function changeInputPlaceholder(){
+    const locationInput = document.getElementById('location-input')
+if(window.innerWidth > 300){
+    locationInput.placeholder = 'Enter your address or click the location icon'
+} else if(window.innerWidth < 300 && window.innerWidth > 230){
+    locationInput.placeholder = 'Enter your address or click location icon'
+} else if(window.innerWidth <= 230){
+    locationInput.placeholder = 'Enter address or click location icon'
+}
+
+}
+
+window.addEventListener("resize", changeInputPlaceholder)
 
 
 
