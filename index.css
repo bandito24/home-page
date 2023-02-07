@@ -262,16 +262,15 @@ border-radius: 5px;
 .grid-plant{
     position: relative;
     margin: 0 2.5px;
-    padding: 10px 10px 5px 10px;
     border-radius: 10px;
     border: solid rgba(251, 250, 245, .0) 1px;
 }
 
-.grid-plant:hover{
+/* .grid-plant:hover{
     background-color: #C7dcf0;
     border: solid rgba(100,100,100,.3) 1px;
     transition: background-color 100ms ease-in, border 100ms ease-in
-}
+} */
 
 .grid-image{
     width: 240px;
@@ -282,7 +281,7 @@ border-radius: 5px;
 
 .grid-text{
     position: absolute;
-    color: rgba(251, 250, 245, .9);
+    color: white;
     top: 148.5px;
     right: 9.8px;
     font-size: 1.1rem;
@@ -291,7 +290,7 @@ border-radius: 5px;
     width: 92.4%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: rgba(100,100,100,.6);
+    background-color: rgba(0,0,0,0.7);
     z-index: 1;
 }
 
@@ -487,7 +486,7 @@ footer p:hover{
         min-width: 240px;
         position: relative;
         margin: 0 9px;
-        padding: 0;
+        padding: 0px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
     }
@@ -533,7 +532,7 @@ footer p:hover{
         max-width: 265px;
         min-width: 240px;
         position: relative;
-        padding: 0;
+        padding: 0px;
         margin: 0 7.5px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
@@ -580,7 +579,7 @@ footer p:hover{
         min-width: 240px;
         position: relative;
         margin: 0 5px;
-        padding: 0;
+        padding: 0px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
     }
@@ -629,7 +628,7 @@ footer p:hover{
         max-width: 265px;
         min-width: 224px;
         position: relative;
-        padding: 0;
+        padding: 0px;
         margin: 0 5px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
@@ -673,12 +672,13 @@ footer p:hover{
         justify-items: center;
     
     }
+
     
     .grid-plant{
         max-width: 265px;
         min-width: 195px;
         position: relative;
-        padding: 0;
+        padding: 0px;
         margin: 0 5px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
@@ -703,6 +703,9 @@ footer p:hover{
         border-bottom-right-radius: 0px;
         border-radius: 10px;
     }
+    /* .grid-text{
+        display: none;
+    } */
     }
 
 
@@ -891,7 +894,7 @@ footer p:hover{
         min-width: 189px;
         position: relative;
         margin: 0 2.5px;
-        padding: 0;
+        padding: 0px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
     }
@@ -916,8 +919,38 @@ footer p:hover{
         border-radius: 10px;
     }
     }
+    @media only screen and (max-width: 1035px){
+        #grid-container{
+            row-gap: 9px;
+        }
+        } 
 
 
+    @media only screen and (max-width: 1020px){
+        #grid-container{
+            row-gap: 6px;
+        }
+        } 
+
+
+    @media only screen and (max-width: 1010px){
+        #grid-container{
+            row-gap: 5px;
+        }
+        } 
+
+
+    @media only screen and (max-width: 1000px){
+        #grid-container{
+            row-gap: 3px;
+        }
+        } 
+
+@media only screen and (max-width: 991px){
+    #grid-container{
+        row-gap: 1px;
+    }
+    } 
 
 @media only screen and (max-width: 938px){
     header h4{
@@ -1077,7 +1110,7 @@ footer p:hover{
         min-width: 180px;
         position: relative;
         margin: 0 2.5px;
-        padding: 0;
+        padding: 0px;
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
     }
@@ -1104,8 +1137,35 @@ footer p:hover{
     }
 
 
+@media only screen and (max-width: 780px){
+    #grid-container{
+        row-gap: 10px;
+    }
+    } 
+
+@media only screen and (max-width: 770px){
+    #grid-container{
+        row-gap: 8px;
+    }
+    }  
+@media only screen and (max-width: 761px){
+    #grid-container{
+        row-gap: 5px;
+    }
+    }  
+    
+@media only screen and (max-width: 752px){
+    #grid-container{
+        row-gap: 3px;
+    }
+    }  
 
 
+@media only screen and (max-width: 737px){
+    #grid-container{
+        row-gap: 1px;
+    }
+    }
 
 @media only screen and (max-width: 700px){
 
@@ -1311,7 +1371,7 @@ a{
     max-width: 265px;
     min-width: 25px;
     position: relative;
-    padding: 0;
+    padding: 0px;
     margin: 0 2.5px;
     border-radius: 10px;
     border: solid rgba(251, 250, 245, .0) 1px;
@@ -1337,6 +1397,47 @@ a{
     border-radius: 10px;
 }
 }
+@media only screen and (max-width: 560px){
+    #grid-container{
+        row-gap: 8px;
+    }
+    }
+@media only screen and (max-width: 559px){
+    #grid-container{
+        row-gap: 8px;
+    }
+    }
+@media only screen and (max-width: 558px){
+    #grid-container{
+        row-gap: 8px;
+    }
+    }
+@media only screen and (max-width: 557px){
+    #grid-container{
+        row-gap: 8px;
+    }
+    }
+@media only screen and (max-width: 555px){
+    #grid-container{
+        row-gap: 5px;
+    }
+    }
+@media only screen and (max-width: 554px){
+    #grid-container{
+        row-gap: 4px;
+    }
+    }
+@media only screen and (max-width: 553px){
+    #grid-container{
+        row-gap: 2.5px;
+    }
+    }
+@media only screen and (max-width: 552px){
+    #grid-container{
+        row-gap: 1px;
+    }
+    }
+    
 
 @media only screen and (max-width: 510px){
 
