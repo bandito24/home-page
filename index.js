@@ -72,27 +72,14 @@ const invisibleMargin = unusedSpace / (numOfColumns * 2)
 
 }
 
-adjustRowGap()
 
-window.addEventListener("resize", adjustRowGap)
 screen.orientation.addEventListener("change", adjustRowGap)
+adjustRowGap()
+window.addEventListener("resize", adjustRowGap)
 
 
 
 
 
 
-// const adjustRowGap = () => {
-//     let plantGap = getComputedStyle(gridPlant[0]).margin
-//     plantGap = plantGap.split(' ')
-//     plantGap = plantGap[1].split('').filter(char => char !== 'p' && char !== 'x').join('')
-//     plantGap = plantGap + 'px'
-//     console.log(plantGap)
-    
-//     for(let i=0; i < gridPlant.length; i++){
-//         gridPlant[i].style.marginBottom = plantGap
-//     }
-    
-// }
 
-// adjustRowGap()
