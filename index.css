@@ -194,9 +194,11 @@ nav{
 #plants-for-location{
     display: flex;
     justify-content: space-between;
-    padding: 20px 15px 0px 20px;
-    margin-bottom: -10px;
+    padding: 10px 15px 0px 20px;
+    margin-bottom: -15px;
     width: 100%;
+    right: 8px;
+    position: relative;
 }
 
 #location-icon-mobile{
@@ -206,7 +208,7 @@ nav{
     font-weight: 700;
     min-width: 240px;
     position: relative;
-    top: 2px;
+    top: 0px;
 }
 
 
@@ -252,14 +254,15 @@ border-radius: 5px;
     justify-content: flex-end;
     position: relative;
     bottom: 18px;
-    right: 30px;
+    right: 20px;
+    font-size: .9rem;
 }
 
 #select-all-plants{
     font-weight: bold;
     width: 100px;
     position: relative;
-    left: 17px;
+    left: 25px;
 }
 
 #select-all-plants::after{
@@ -903,6 +906,11 @@ footer p:hover{
 #toggle-native{
     display: none;
 }
+#plants-for-location{
+    padding-top: 18px;
+    padding-bottom: 5px;
+    right: 10px;
+}
 }
 
 
@@ -1233,9 +1241,6 @@ a{
     
 }
 @media only screen and (max-width: 388px) {
-    #enter-address{
-        right: 20px;
-    }
 
 }
 
@@ -1315,9 +1320,9 @@ a{
         height: auto;
         padding: 5px;
     }
-    #enter-address{
+    /* #enter-address{
         right: 20px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 263px){
