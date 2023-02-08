@@ -41,7 +41,6 @@ header{
 
 #user p{
     position: relative;
-    /* top: 1px; */
     bottom: 8px;
     left: 18px;
     opacity: .6;
@@ -197,6 +196,7 @@ nav{
     justify-content: space-between;
     padding: 20px 15px 0px 20px;
     margin-bottom: -10px;
+    width: 100%;
 }
 
 #location-icon-mobile{
@@ -204,13 +204,14 @@ nav{
 }
 #location-label{
     font-weight: 700;
+    min-width: 240px;
+    position: relative;
+    top: 2px;
 }
 
-#location-input{
-    width: 37.5em;
-    margin-left: 5px;
-    padding: 5px;
-}
+
+
+
 
 #location-input:focus{
 outline: none;
@@ -218,22 +219,31 @@ border: 2px #A2CCFA solid;
 border-radius: 5px;
 }
 
-#location-icon{
-    position: relative;
-    top: 10px;
-    right: 2px;
-}
+
 
 #enter-address{
     display: flex;
     position: relative;
+    width: 100%;
 
 }
 
 #user-address{
+    display: inline-flex;
     position: relative;
     bottom: 13px;
-    left: 5px;
+    right: 5px;
+    width: 50%;
+}
+#location-input{
+    min-width: 37.5em;
+    margin-left: 5px;
+    padding: 5px;
+    align-self: center;
+}
+#location-icon{
+    position: relative;
+    right: 2px;
 }
 
 
@@ -242,10 +252,14 @@ border-radius: 5px;
     justify-content: flex-end;
     position: relative;
     bottom: 18px;
+    right: 30px;
 }
 
 #select-all-plants{
     font-weight: bold;
+    width: 100px;
+    position: relative;
+    left: 17px;
 }
 
 #select-all-plants::after{
@@ -260,11 +274,14 @@ border-radius: 5px;
     cursor: pointer;
 }
 
+#select-native-plants{
+    width: 100px;
+}
+
 #grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-template-rows: repeat(3, 1fr);
-    /* column-gap: 15px; */
     margin: 0 auto;
     grid-auto-rows: 1fr;
     width: 100%;
@@ -284,7 +301,6 @@ border-radius: 5px;
 .grid-image{
     width: 100%;
     height: auto;
-    /* height: 180px; */
     border-radius: 10px;
     object-fit: cover;
     position: relative;
@@ -293,12 +309,8 @@ border-radius: 5px;
 .grid-text{
     position: absolute;
     color: white;
-    /* top: 148.5px; */
     bottom: 4px;
-    /* right: 9.8px; */
     font-size: 1.1rem;
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     width: 100%;
     padding: 0;
@@ -487,7 +499,6 @@ footer p:hover{
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* column-gap: 15px; */
         max-width: 2846px;
         margin: 0 auto;
         grid-auto-rows: 1fr;
@@ -526,7 +537,6 @@ footer p:hover{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* column-gap: 15px; */
         margin: 0 auto;
         grid-auto-rows: 1fr;
         width: 100%;
@@ -563,7 +573,6 @@ footer p:hover{
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* column-gap: 15px; */
         margin: 0 auto;
         grid-auto-rows: 1fr;
         width: 100%;
@@ -604,7 +613,6 @@ footer p:hover{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* column-gap: 15px; */
         margin: 0 auto;
         grid-auto-rows: 1fr;
         width: 100%;
@@ -644,7 +652,6 @@ footer p:hover{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* column-gap: 15px; */
         margin: 0 auto;
         grid-auto-rows: 1fr;
         width: 100%;
@@ -704,12 +711,6 @@ footer p:hover{
         font-size: 1rem;
     }
 
-   
-    /* #user, button{
-        right: 5px;
-    } */
-
-
 
 }
 
@@ -744,8 +745,6 @@ footer p:hover{
 }
 
 
-
-
 @media only screen and (max-width: 1035px){
 
     #grid-container{
@@ -761,7 +760,6 @@ footer p:hover{
     }
     
     .grid-plant{
-        /* height: 100%; */
         max-width: 240px;
         min-width: 189px;
         position: relative;
@@ -770,9 +768,7 @@ footer p:hover{
         border-radius: 10px;
         border: solid rgba(251, 250, 245, .0) 1px;
     }
-    
-    
-    
+      
     .grid-image{
         aspect-ratio: 4/3;
         width: 100%;
@@ -784,19 +780,17 @@ footer p:hover{
         font-size: 1.1rem; 
     }
 
-
-
+    #user-address{
+       
+        width: 70%;
+    }
     #location-input{
-        width: 33.5em;
+        min-width: 80%;
+     
+    }
+   
     }
 
-    }
-
-    @media only screen and (max-width: 965px){
-        #location-input{
-            width: 28.5em;
-        }
-    }
    
 
 @media only screen and (max-width: 938px){
@@ -818,10 +812,6 @@ footer p:hover{
 
 @media only screen and (max-width: 910px){
 
-
-    #location-input{
-        width: 23.5em;
-    }
     .grid-text{
         font-size: 1rem; 
     }
@@ -839,16 +829,6 @@ footer p:hover{
 
 
 }
-
-@media only screen and (max-width: 829px) {
-    #location-input{
-        width: 20.5em;
-    }
-
-}
-
-
-
 
 
 
@@ -868,10 +848,37 @@ footer p:hover{
 }
 
 @media only screen and (max-width: 800px){
+    
+       
+  
+    #location-input{
+        min-width: 80%;
+        flex-basis: 35em;
+     
+    }
+    #location-icon{
+        padding-right: 30px;
+    }
 
     #enter-address{
         margin-bottom: 10px;
+        width: 100%;
     }
+
+    #user-address{
+        position: relative;
+       top: 1px;
+        width: 80%;
+    }
+    #plants-for-location{
+        position: relative;
+        bottom: 10px;
+    }
+
+    #location-label{
+        top: 5px;
+    }
+
     #header-logo{
         width: 12em;
     }
@@ -889,9 +896,7 @@ footer p:hover{
         padding: 4px 6px;
         cursor: pointer;
     }
-    #location-input{
-        width: 32.5em;
-    }
+  
 }
 
 @media only screen and (max-width: 800px){
@@ -907,7 +912,6 @@ footer p:hover{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* column-gap: 15px; */
         margin: 0 auto;
         grid-auto-rows: 1fr;
         width: 100%;
@@ -937,17 +941,10 @@ footer p:hover{
         object-fit: cover;
     }
     
-    
-    #location-input{
-        width: 30em;
-    }
+
     }
 
-@media only screen and (max-width: 729px){
-    #location-input{
-        width: 27.5em;
-    }
-}
+
 
 @media only screen and (max-width: 700px){
 
@@ -1013,11 +1010,6 @@ header{
     animation: dropDown 200ms ease-in
 }
 
-  
-
-    
-
-
 
 @keyframes dropDown{
  
@@ -1055,23 +1047,12 @@ a{
     text-decoration: none; 
 }
 
-#location-input{
-    width: 26em;
-}
 
-}
-@media only screen and (max-width: 673px){
-    #location-input{
-        width: 24em;
-    }
 }
 
 
-@media only screen and (max-width: 668px){
-    #location-input{
-        width: 23.5em;
-    }
-}
+
+
 
 
 @media only screen and (max-width: 657px){
@@ -1086,34 +1067,54 @@ a{
     .grid-text{
         font-size: 1rem; 
     }
-    #location-input{
-        width: 23em;
-    }
+   
 }
-@media only screen and (max-width: 633px){
-    
-    #location-input{
-        width: 22em;
-    }
-}
+
 
 @media only screen and (max-width: 624px){
     #location-input{
-        width: 37.5em;
+        min-width: 80%;
+        flex-basis: 35em;
+     
+    }
+    #location-icon{
+        padding-left: 10px;
+        padding-right: 50px;
     }
 
     #enter-address{
+        margin-bottom: 10px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         position: relative;
         right: 13px;
         
     }
-    
+
+    #user-address{
+        position: relative;
+       top: 1px;
+        width: 100%;
+    }
+    #plants-for-location{
+        position: relative;
+        bottom: 10px;
+    }
+
     #location-label{
+        top: 5px;
+
         position: relative;
         left: 9px;
+        padding-bottom: 7px;
+        padding-top: 3px;
     }
+    #location-input{
+        position: relative;
+        left: 10px;
+    }
+
 
     #mobile-label{
         padding-bottom: 9px;
@@ -1128,19 +1129,7 @@ a{
 }
 
 
-@media only screen and (max-width: 600px) {
-    #location-input{
-        width: 35.5em;
-    }
 
-}
-
-@media only screen and (max-width: 575px) {
-    #location-input{
-        width: 34.5em;
-    }
-
-}
 
 @media only screen and (max-width: 560px){
 
@@ -1148,7 +1137,6 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* column-gap: 15px; */
     margin: 0 auto;
     grid-auto-rows: 1fr;
     width: 100%;
@@ -1168,7 +1156,6 @@ a{
 }
 
 
-
 .grid-image{
     aspect-ratio: 4/3;
     width: 100%;
@@ -1180,17 +1167,6 @@ a{
 }
 }
 
-@media only screen and (max-width: 542px) {
-    #location-input{
-        width: 32.5em;
-    }
-
-}
-@media only screen and (max-width: 520px){
-    #location-input{
-        width: 30.5em;
-    }
-}
 
 
 @media only screen and (max-width: 510px){
@@ -1223,48 +1199,6 @@ a{
     }
     
 }
-@media only screen and (max-width: 488px) {
-    #location-input{
-        width: 29.5em;
-    }
-
-}
-
-@media only screen and (max-width: 477px){
-    #location-input{
-        width: 27.5em;
-    }
-
-}
-@media only screen and (max-width: 466px){
-    #location-input{
-        width: 26.5em;
-    }
-
-}
-
-
-
-
-@media only screen and (max-width: 461px){
-
-    
-    #location-input{
-        width: 25.5em;
-    }
-
-
-}
-@media only screen and (max-width: 438px){
-
-    
-    #location-input{
-        width: 24.5em;
-    }
-
-
-}
-
 
 
 @media only screen and (max-width: 427px){
@@ -1277,28 +1211,9 @@ a{
     
 
 }
-@media only screen and (max-width: 424px){
-
-    
-    #location-input{
-        width: 23.5em;
-    }
-
-
-}
-
-
-
-@media only screen and (max-width: 413px){
-    #location-input{
-        width: 22.5em;
-    }
-}
 
 
 @media only screen and (max-width: 399px){
-    
-
 
     footer p{
         font-size: .7rem;
@@ -1315,26 +1230,13 @@ a{
         font-size: .9rem; 
     }
 
-        #location-input{
-            width: 21.5em;
-        }
     
 }
-
-
-@media only screen and (max-width: 383px){
-    #location-input{
-        width: 20.5em;
+@media only screen and (max-width: 388px) {
+    #enter-address{
+        right: 20px;
     }
-}
 
-@media only screen and (max-width: 371px){
-    #location-input{
-        width: 19.5em;
-    }
-    /* #location-input{
-        font-size: 15px;
-    } */
 }
 
 
@@ -1347,34 +1249,19 @@ a{
 }
 
 
-
 @media only screen and (max-width: 360px){
     .grid-text{
         font-size: .8rem; 
     }
-   
-        #location-input{
-            width: 22.5em;
-            font-size: .7rem;
-        }
-    
-    
-}
 
-@media only screen and (max-width: 349px){
-    #location-input{
-        width: 20.5em;
+}
+@media only screen and (max-width: 352px) {
+
+    #user-address{
+        width: 98%;
     }
+    
 }
-
-@media only screen and (max-width: 333px){
-    #location-input{
-        width: 21.5em;
-        font-size: .65rem;
-    }
-}
-
-
 
 
 
@@ -1387,18 +1274,22 @@ a{
     .grid-text{
         font-size: .7rem; 
     }
+    #location-input{
+        font-size: .75rem;
+    }
 
 }
 
 @media only screen and (max-width: 317px){
-    #location-input{
-        width: 21.5em;
-        font-size: .6rem;
-    }
+
+        #user-address{
+            width: 95%;
+        }
+  
 }
 @media only screen and (max-width: 303px){
     #location-input{
-        width: 19.5em;
+        font-size: .7rem;
     }
 }
 
@@ -1414,13 +1305,6 @@ a{
         left: 7px;
         top: 3px;
     }
-
-    #location-input{
-        width: 19.5em;
-    }
-    
-    
-
 }
 @media only screen and (max-width: 280px){
     #mobile-logo{
@@ -1435,73 +1319,40 @@ a{
         right: 20px;
     }
 }
-@media only screen and (max-width: 277px){
-    #location-input{
-        width: 19.5em;
-        font-size: .6rem;
-    }
-   
-}
-@media only screen and (max-width: 269px){
-    #location-input{
-        width: 18.5em;
-    }
-   
-}
+
 @media only screen and (max-width: 263px){
     
     #plants-for-location{
         padding: 5px 0px 0px 20px;
     }
     #location-input{
-        width: 18em;
+        font-size: .65rem;
     }
+    
 }
 @media only screen and (max-width: 254px){
     
-    
-    #location-input{
-        width: 17.5em;
+    #user-address{
+        width: 80%;
     }
+   
     #location-label{
         font-size: .9rem;
     }
-}
-@media only screen and (max-width: 250px){
-    
-    
     #location-input{
-        width: 20.5em;
-        font-size: .5rem;
+        font-size: .55rem;
     }
 }
-@media only screen and (max-width: 246px){
-    
-    
-    #location-input{
-        width: 19.5em;
-    }
-}
+
 
 
 @media only screen and (max-width: 237px){
-    #location-input{
-        width: 18.5em;
-    }
+   
     #location-label{
        font-size: .8rem; 
     }
 }
-@media only screen and (max-width: 230px){
-    #location-input{
-        width: 17.5em;
-    }
-}
-@media only screen and (max-width: 222px){
-    #location-input{
-        width: 16.5em;
-    }
-}
+
 
 
 @media only screen and (max-width: 217px){
@@ -1510,16 +1361,10 @@ a{
         font-size: .5rem; 
     }
 }
-@media only screen and (max-width: 214px){
-    #location-input{
-        width: 15.5em;
-    }
-}
+
 
 @media only screen and (max-width: 208px){
-    #location-input{
-        width: 14.5em;
-    }
+   
     #location-label{
        font-size: .75rem; 
     }
@@ -1548,9 +1393,7 @@ a{
         width: 40px;
     }
    
-        #location-input{
-            width: 13.5em;
-        }    
+      
 }
 
 @media only screen and (max-width: 196px){
@@ -1559,17 +1402,10 @@ a{
        font-size: .7rem; 
     }
 }
-@media only screen and (max-width: 196px){
-    #location-input{
-        width: 12.5em;
-    }    
-    
-}
+
 
 @media only screen and (max-width: 188px){
-    #location-input{
-        width: 11.5em;
-    }
+   
     #location-label{
        font-size: .7rem; 
     }
@@ -1588,9 +1424,7 @@ a{
 }
 }
 @media only screen and (max-width: 176px){
-    #location-input{
-        width: 10.5em;
-    }
+    
     #location-label{
        font-size: .7rem; 
     }
@@ -1607,21 +1441,9 @@ a{
     .grid-text{
         font-size: .7rem; 
     }
-    #location-input{
-        width: 9.5em;
-    }
+    
     }
 
-@media only screen and (max-width: 163px){
-    #location-input{
-        width: 8.5em;
-    }
-}
-@media only screen and (max-width: 155px){
-    #location-input{
-        width: 7.5em;
-    }
-}
 
 @media only screen and (max-width: 137px){
     .grid-text{
@@ -1637,4 +1459,4 @@ a{
     .grid-text{
         font-size: .4rem; 
     }
-    }
+}
