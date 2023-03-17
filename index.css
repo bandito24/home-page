@@ -1,5 +1,5 @@
 #container{
-    height: 100vh;
+    min-height: 100vh;
     overflow: auto;
     overflow-x: hidden;
     
@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    height: auto;    
+    /* height: auto;     */
 }
 
 
@@ -312,7 +312,7 @@ border-radius: 5px;
 .grid-text{
     position: absolute;
     color: white;
-    bottom: 4px;
+    bottom: 0px;
     font-size: 1.1rem;
     text-align: center;
     width: 100%;
@@ -444,9 +444,11 @@ footer{
     background-color: #A2CCFA;
     font-size: .75rem;
     padding: 0 10px;
+   
+
     position: relative;
-    top: 7em;
-    margin-bottom: -20em;
+    top: 11.6em;
+   
 
 }
 
